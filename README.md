@@ -35,6 +35,7 @@ Role Variables
 |`project_default_name`            | CoolStore MSA              | Default project display name |
 |`project_default_desc`            | CoolStore MSA              | Default project description |
 |`project_annotations`             | demo=demo-modern-arch      | Project annotations |
+|`project_admin`                   | -                          | The user to assign as project admin, if running the playbooks as system:admin |
 |`project_join_with`               | cicd                       | Join project networks with *cicd* project |
 |`prebuilt_images_project_name`    | coolstore-image-builds     | Project name for pre-built coolstore container images. If images exist, the won't be rebuilt during deployment |
 |`disable_stage_project`           | false                      | If true, disable stage project and promote apps from DEV to PROD |
