@@ -1,0 +1,14 @@
+---
+---
+dependencies: []
+allow_duplicates: false
+
+galaxy_info:
+  author: Siamak Sadeghianfar
+  description: CoolStore CI/CD Demo for OpenShift
+  company: "Red Hat"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.3
+  galaxy_tags:
+    - openshift
+    - coolstore
