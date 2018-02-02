@@ -56,7 +56,7 @@ name: Example Playbook
 hosts: localhost
 tasks:
 - import_role:
-    name: openshift_coolstore
+    name: siamaksade.openshift_coolstore
   vars:
     project_name: "coolstore"
     openshift_cli: "oc --server http://master:8443"

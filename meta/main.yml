@@ -1,7 +1,7 @@
 ---
 ---
 dependencies: []
-allow_duplicates: false
+allow_duplicates: true
 
 galaxy_info:
   author: Siamak Sadeghianfar
@@ -9,6 +9,10 @@ galaxy_info:
   company: "Red Hat"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.3
+  platforms:
+  - name: GenericLinux
+    versions:
+    - any
   galaxy_tags:
     - openshift
     - coolstore
