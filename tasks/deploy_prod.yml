@@ -17,9 +17,9 @@
   shell: "{{ openshift_cli }} delete dc,svc,route,pvc,cm -l {{ prune_deployments_selector_prod }} -n {{ project_prod }}"
   ignore_errors: true
   when:
-  - prune_deployments_selector_stage is defined
-  - prune_deployments_selector_stage is not none
-  - prune_deployments_selector_stage|trim() != ""
+  - prune_deployments_selector_prod is defined
+  - prune_deployments_selector_prod is not none
+  - prune_deployments_selector_prod|trim != ''
 
 # remove persistent storage
 - import_tasks: make_ephemeral.yml

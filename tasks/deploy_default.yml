@@ -14,7 +14,7 @@
   when:
   - prune_deployments_selector is defined
   - prune_deployments_selector is not none
-  - prune_deployments_selector|trim() != ""
+  - prune_deployments_selector|trim != ""
 
 # remove persistent storage
 - import_tasks: make_ephemeral.yml
