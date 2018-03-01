@@ -10,7 +10,7 @@
   when:
   - prune_deployments_selector_stage is defined
   - prune_deployments_selector_stage is not none
-  - prune_deployments_selector_stage|trim() != ""
+  - prune_deployments_selector_stage|trim != ''
 
 # remove persistent storage
 - import_tasks: make_ephemeral.yml
