@@ -10,7 +10,7 @@
 
 - name: deploy inventory blue and green deployments in {{ project_prod }}
   shell: |
-    {{ openshift_cli }} delete all,pvc -l app=inventory --now --ignore-not-found -n {{ project_prod }}
+    {{ openshift_cli }} delete bc,dc,svc,route,pvc -l app=inventory --now --ignore-not-found -n {{ project_prod }}
     {{ openshift_cli }} process -f {{ bluegreen_deployment_template }} --param=APP_VERSION_BLUE=prod-blue --param=APP_VERSION_GREEN=prod-green --param=HOSTNAME_SUFFIX={{ project_prod }}.{{ hostname_suffix }} -n {{ project_prod }} | {{ openshift_cli }} create -f - -n {{ project_prod }}
 
 - name: prune deployments in {{ project_prod }}
