@@ -1,17 +1,17 @@
 ---
 # github 
-github_account: jbossdemocentral
-github_ref: stable-ocp-3.10
+src_github_account: jbossdemocentral
+src_github_ref: stable-ocp-3.10
 
 # templates
-builds_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/coolstore-builds-template.yaml
-coolstore_github_repo: https://github.com/{{github_account}}/coolstore-microservice.git
-deployments_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/coolstore-deployments-template.yaml
-netflix_oss_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/netflix-oss-list.yaml
-bluegreen_deployment_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/inventory-bluegreen-template.yaml
-pipeline_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/inventory-pipeline-template.yaml
-simple_pipeline_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/inventory-pipeline-template-simple.yaml
-inventory_template: https://raw.githubusercontent.com/{{ github_account }}/coolstore-microservice/{{ github_ref }}/openshift/templates/inventory-template.json
+builds_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/coolstore-builds-template.yaml
+coolstore_github_repo: https://github.com/{{src_github_account}}/coolstore-microservice.git
+deployments_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/coolstore-deployments-template.yaml
+netflix_oss_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/netflix-oss-list.yaml
+bluegreen_deployment_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/inventory-bluegreen-template.yaml
+pipeline_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/inventory-pipeline-template.yaml
+simple_pipeline_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/inventory-pipeline-template-simple.yaml
+inventory_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/inventory-template.json
 
 # project names
 project_cicd: cicd

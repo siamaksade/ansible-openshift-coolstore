@@ -24,7 +24,7 @@
   shell: >
     {{ openshift_cli }} process -f {{ builds_template }} \
       --param=GIT_URI={{ coolstore_github_repo }} \
-      --param=GIT_REF={{ github_ref }} \
+      --param=GIT_REF={{ src_github_ref }} \
       --param=MAVEN_MIRROR_URL={{ maven_mirror_url }} \
       -n {{ project_name }} | {{ openshift_cli }} create -f - -n {{ project_name }}
   ignore_errors: true

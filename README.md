@@ -9,8 +9,8 @@ Role Variables
 
 | Variable                         | Default Value              | Description   |
 |-------------------------------   |----------------------------|---------------|
-|`github_account`                  | jbossdemocentral           | GitHub account for [coolstore microservice code](https://github.com/jbossdemocentral/coolstore-microservice.git) |
-|`github_ref`                      | master                     | GitHub repo branch for [coolstore microservice code](https://github.com/jbossdemocentral/coolstore-microservice.git) |
+|`src_github_account`                  | jbossdemocentral           | GitHub account for [coolstore microservice code](https://github.com/jbossdemocentral/coolstore-microservice.git) |
+|`src_github_ref`                      | master                     | GitHub repo branch for [coolstore microservice code](https://github.com/jbossdemocentral/coolstore-microservice.git) |
 |`maven_mirror_url`                | -                          | Maven repository mirror url |
 |`keep_build_configs`              | true                       | Do not remove the buildconfigs after build completes |
 |`bluegreen_image`                 | inventory                  | Image name to promote to blue and green versions  |
