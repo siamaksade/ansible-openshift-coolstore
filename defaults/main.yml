@@ -1,7 +1,7 @@
 ---
 # github 
 src_github_account: jbossdemocentral
-src_github_ref: stable-ocp-3.10
+src_github_ref: stable-ocp-3.11
 
 # templates
 builds_template: https://raw.githubusercontent.com/{{ src_github_account }}/coolstore-microservice/{{ src_github_ref }}/openshift/templates/coolstore-builds-template.yaml
