@@ -10,7 +10,7 @@
 
 - name: delete pvc and dc volumes in {{ project_name }}
   shell: |
-    {{ openshift_cli }} volumes dc/{{ item.0.dc }} --name={{ item.1.name }} --add -t emptyDir --overwrite -n {{ project_name }}
+    {{ openshift_cli }} set volume dc/{{ item.0.dc }} --name={{ item.1.name }} --add -t emptyDir --overwrite -n {{ project_name }}
     {{ openshift_cli }} delete pvc {{ item.1.persistentVolumeClaim.claimName }} -n {{ project_name }}
   when: item.0.vol is not none
   with_subelements: 
