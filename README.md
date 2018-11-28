@@ -1,5 +1,5 @@
 Ansible Role: CoolStore Demo on OpenShift
-[![Build Status](https://travis-ci.org/siamaksade/ansible-openshift-coolstore.svg?branch=ocp-3.11)](https://travis-ci.org/siamaksade/ansible-openshift-coolstore)
+[![Build Status](https://travis-ci.org/siamaksade/ansible-openshift-coolstore.svg?branch=master)](https://travis-ci.org/siamaksade/ansible-openshift-coolstore)
 =========
 
 Ansible Role for deploying [CoolStore Microservices](https://github.com/jbossdemocentral/coolstore-microservice.git) demo on OpenShift
